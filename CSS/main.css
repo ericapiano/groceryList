@@ -1,4 +1,4 @@
-/* body {
+body {
   background-image: url(../groceriesBackground.jpg);
   background-position: fixed;
   background-size: cover;
@@ -8,23 +8,15 @@
   width: 100vw;
 }
 
-header {
-  margin-left: 58%;
-  margin-right: 8%;
-  padding-left: 4%;
-  margin-top: 4%;
-  font-size: 50px;
-  text-decoration: underline;
+body header {
+  background-color: #228522;
   font-family: "Anton", sans-serif;
-  color: white;
-  background-color: rgb(34, 133, 34);
+  font-size: 50px;
 }
 
-#list {
+body #list {
   background-color: white;
-  margin-left: 58%;
-  margin-right: 8%;
-  padding-left: 4%;
-  font-size: 25px;
   font-family: "Questrial", sans-serif;
-} */
+  font-size: 25px;
+}
+/*# sourceMappingURL=main.css.map */
