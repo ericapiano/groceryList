@@ -8,7 +8,7 @@ https://ericapiano.github.io/CryptoClubhouse/
 
 - JavaScript
 - JQuery
-- CSS
 - SASS
 - SVG icons
 - Google fonts
+- font awesome

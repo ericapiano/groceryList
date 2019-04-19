@@ -6,7 +6,7 @@ $colors: (
 
 // sets background image to be full screen despite screen size
 body {
-  background-image: url(../groceriesBackground.jpg);
+  background-image: url(/Users/ericapiano/Desktop/groceryList/images/groceriesBackground.jpg);
   background-position: fixed;
   background-size: cover;
   background-position: center;
@@ -18,11 +18,20 @@ body {
     background-color: map-get($colors, header);
     font-family: "Anton", sans-serif;
     font-size: 50px;
+    color: white;
+    margin-left: 58%;
+    margin-right: 8%;
   }
 
   #list {
     background-color: map-get($colors, list);
     font-family: "Questrial", sans-serif;
-    font-size: 25px;
+    font-size: 15px;
+    margin-left: 58%;
+    margin-right: 8%;
+  }
+  li {
+    padding-top: 10px;
+    padding-right: 10%;
   }
 }

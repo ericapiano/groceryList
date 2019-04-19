@@ -1,5 +1,5 @@
 body {
-  background-image: url(../groceriesBackground.jpg);
+  background-image: url(/Users/ericapiano/Desktop/groceryList/images/groceriesBackground.jpg);
   background-position: fixed;
   background-size: cover;
   background-position: center;
@@ -12,11 +12,21 @@ body header {
   background-color: #228522;
   font-family: "Anton", sans-serif;
   font-size: 50px;
+  color: white;
+  margin-left: 58%;
+  margin-right: 8%;
 }
 
 body #list {
   background-color: white;
   font-family: "Questrial", sans-serif;
-  font-size: 25px;
+  font-size: 15px;
+  margin-left: 58%;
+  margin-right: 8%;
+}
+
+body li {
+  padding-top: 10px;
+  padding-right: 10%;
 }
 /*# sourceMappingURL=main.css.map */
