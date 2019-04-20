@@ -1,5 +1,5 @@
 #Grocery List
-A single page web application created as a take home assignment for Bank of America Merryl Lynch job interview for a Junior Front End Developer role.
+A single page web application created as a take home assignment for Bank of America Merryl Lynch job interview for the Junior Front End Developer role.
 
 ##Demo Link
 https://ericapiano.github.io/CryptoClubhouse/
@@ -8,6 +8,7 @@ https://ericapiano.github.io/CryptoClubhouse/
 
 - JavaScript
 - JQuery
+- ES6
 - SASS
 - SVG icons
 - Google fonts

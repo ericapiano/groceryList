@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -14,7 +14,9 @@ body header {
   font-size: 50px;
   color: white;
   margin-left: 58%;
-  margin-right: 8%;
+  margin-right: 4%;
+  padding-left: 5%;
+  box-shadow: 10px 10px black;
 }
 
 body #list {
@@ -22,11 +24,34 @@ body #list {
   font-family: "Questrial", sans-serif;
   font-size: 15px;
   margin-left: 58%;
-  margin-right: 8%;
+  margin-right: 4%;
+  text-align: center;
+  box-shadow: 10px 10px;
 }
 
 body li {
   padding-top: 10px;
-  padding-right: 10%;
+  padding-left: 5%;
+}
+
+body b {
+  font-size: 18px;
+}
+
+body u {
+  font-size: 20px;
+}
+
+.picture {
+  width: 10%;
+  height: 10%;
+  padding-top: 5%;
+}
+
+.photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,12 @@ $colors: (
   list: white
 );
 
+$padding: (
+  padding-left: 5%,
+  margin-right: 5%,
+  margin-left: 58%
+);
+
 // sets background image to be full screen despite screen size
 body {
   background-image: url(/Users/ericapiano/Desktop/groceryList/images/groceriesBackground.jpg);
@@ -19,19 +25,13 @@ body {
     font-family: "Anton", sans-serif;
     font-size: 50px;
     color: white;
-    margin-left: 58%;
-    margin-right: 8%;
+    padding: $padding;
   }
 
   #list {
     background-color: map-get($colors, list);
     font-family: "Questrial", sans-serif;
     font-size: 15px;
-    margin-left: 58%;
-    margin-right: 8%;
-  }
-  li {
-    padding-top: 10px;
-    padding-right: 10%;
+    padding: $padding;
   }
 }
