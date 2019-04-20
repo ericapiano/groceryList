@@ -26,11 +26,13 @@
     <link rel="stylesheet" type="text/css" href="CSS/main.css" />
   </head>
   <body>
-    <header>
+    <!-- div to store title -->
+    <div class="top">
       <i class="fas fa-shopping-cart" alt="shopping cart"></i>
       GROCERY LIST
-    </header>
+    </div>
 
+    <!-- div to store list of groceries-->
     <div class="list" id="list"></div>
 
     <!-- JQuery CDN link - loads jquery -->
@@ -38,9 +40,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
 
+    <!-- loads JSON file -->
+    <script src="groceries.json"></script>
     <!-- loads JS file -->
-    <!-- <script src="groceries.json"></script> -->
-
     <script src="JS/index.js"></script>
   </body>
 </html>

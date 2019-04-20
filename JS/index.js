@@ -1,8 +1,6 @@
 // this function runs when the page is loaded
-
 $(function() {
   // create JSON array and store in the data variable
-
   var data = [
     {
       category: "FRUIT",
@@ -81,23 +79,26 @@ $(function() {
   // create a JSON string from data variable
   var json_array = JSON.stringify(data);
 
-  // call  read_array function and parse the array string to it
+  // call read_array function and parse the array string to it
   read_array(json_array);
 });
 
 function read_array(data) {
   var list_items = JSON.parse(data);
 
-  // grabs/maps through each category frmo data array
+  // maps/loops through each category from data array
   var list = list_items.map(
     val =>
+      // create "photo" class dynamically to hold food's image on page and assign coorelated "alt" tag (to be altered in CSS for sizing and positioning)
       `<div class="photo"><img class="picture" src=${val.image} alt="${
         val.name
-      }"><ul class="list_li"><u>${val.category}</u><br><b>${val.item}</b><br>${
-        val.type
-      }<br>${val.brand}<br> quantity: ${val.qty}<br> </ul> </div>`
+      }"><ul class="list_li"><u>${val.category}</u><br><b>${
+        val.item
+      }</b><br> Type: ${val.type}<br> Brand: ${val.brand}<br> Quantity: ${
+        val.qty
+      }<br> </ul> </div>`
   );
 
-  // prints data onto page
+  // prints data onto page in "list" div as created in index.html
   $("#list").html(list);
 }

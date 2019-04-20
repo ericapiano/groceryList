@@ -8,15 +8,16 @@ body {
   width: 100vw;
 }
 
-body header {
+body .top {
   background-color: #228522;
   font-family: "Anton", sans-serif;
   font-size: 50px;
   color: white;
   margin-left: 58%;
   margin-right: 4%;
-  padding-left: 5%;
-  box-shadow: 10px 10px black;
+  padding-left: 8%;
+  box-shadow: 10px 10px rgb(49, 48, 48);
+  border: 1px solid black;
 }
 
 body #list {
@@ -26,7 +27,7 @@ body #list {
   margin-left: 58%;
   margin-right: 4%;
   text-align: center;
-  box-shadow: 10px 10px;
+  box-shadow: 10px 10px rgb(49, 48, 48);
 }
 
 body li {
@@ -36,6 +37,7 @@ body li {
 
 body b {
   font-size: 18px;
+  font-weight: 800;
 }
 
 body u {
