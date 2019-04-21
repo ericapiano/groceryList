@@ -8,7 +8,7 @@ $(function() {
       type: "Honey Crisp",
       brand: "Little cuties",
       qty: 10,
-      image: "/Users/ericapiano/Desktop/groceryList/images/apple.svg",
+      image: "./images/apple.svg",
       name: "apple"
     },
     {
@@ -17,7 +17,7 @@ $(function() {
       type: "2%",
       brand: "generic",
       qty: "1 gallon",
-      image: "/Users/ericapiano/Desktop/groceryList/images/milkGallon.svg",
+      image: "./images/milkGallon.svg",
       name: "milk"
     },
     {
@@ -26,7 +26,7 @@ $(function() {
       type: "Penne",
       brand: "Barilla",
       qty: 3,
-      image: "/Users/ericapiano/Desktop/groceryList/images/penne.svg",
+      image: "./images/penne.svg",
       name: "penne"
     },
     {
@@ -35,7 +35,7 @@ $(function() {
       type: "Green",
       brand: "Jello",
       qty: 3,
-      image: "/Users/ericapiano/Desktop/groceryList/images/jello.svg",
+      image: "./images/jello.svg",
       name: "jello"
     },
     {
@@ -44,7 +44,7 @@ $(function() {
       type: "Assorted flavors",
       brand: "Chobani",
       qty: 12,
-      image: "/Users/ericapiano/Desktop/groceryList/images/yogurt.svg",
+      image: "./images/yogurt.svg",
       name: "yogurt"
     },
     {
@@ -53,7 +53,7 @@ $(function() {
       type: "Linguini",
       brand: "Barilla",
       qty: 3,
-      image: "/Users/ericapiano/Desktop/groceryList/images/linguini.svg",
+      image: "./images/linguini.svg",
       name: "linguini"
     },
     {
@@ -62,7 +62,7 @@ $(function() {
       type: "regular",
       brand: "Happy Farms",
       qty: 2,
-      image: "/Users/ericapiano/Desktop/groceryList/images/appleJuice.svg",
+      image: "./images/appleJuice.svg",
       name: "apple juice"
     },
     {
@@ -71,7 +71,7 @@ $(function() {
       type: "Tangerine",
       brand: "Grey Goose",
       qty: 1,
-      image: "/Users/ericapiano/Desktop/groceryList/images/vodka.svg",
+      image: "./images/vodka.svg",
       name: "vodka"
     }
   ];
@@ -86,10 +86,10 @@ $(function() {
 function read_array(data) {
   var list_items = JSON.parse(data);
 
-  // maps/loops through each category from data array
+  // maps/iterates through each item from data array
   var list = list_items.map(
     val =>
-      // create "photo" class dynamically to hold food's image on page and assign coorelated "alt" tag (to be altered in CSS for sizing and positioning)
+      // create "photo" class dynamically to hold food's image on page and assigns coorelated "alt" tag (to be altered in CSS for sizing and positioning)
       `<div class="photo"><img class="picture" src=${val.image} alt="${
         val.name
       }"><ul class="list_li"><u>${val.category}</u><br><b>${

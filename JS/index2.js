@@ -10,7 +10,7 @@
 //     for (var i = 0, l = elem.groceries.length; i < l; i++) {
 //       output += `
 //               <div>
-//                   <p>Cat : ${elem.groceries[i].category}</p>
+//                   <p>Category : ${elem.groceries[i].category}</p>
 //                   <p>Item : ${elem.groceries[i].item}</p>
 //                   <p>Type : ${elem.groceries[i].type}</p>
 //               </div>
@@ -60,7 +60,7 @@
 //   xobj.open("GET", "groceries.json", true);
 //   xobj.onreadystatechange = function() {
 //     if (xobj.readyState == 4 && xobj.status == "200") {
-//       // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+
 //       callback(xobj.responseText);
 //     }
 //   };

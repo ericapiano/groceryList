@@ -9,7 +9,7 @@ https://ericapiano.github.io/CryptoClubhouse/
 - JavaScript
 - JQuery
 - ES6
-- SASS
+- SASS/CSS
 - SVG icons
 - Google fonts
 - font awesome
