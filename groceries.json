@@ -5,7 +5,7 @@
     "type": "Honey Crisp",
     "brand": "Little cuties",
     "qty": 10,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/apple.svg"
+    "image": "/images/apple.svg"
   },
   {
     "category": "beverage",
@@ -13,7 +13,7 @@
     "type": "2%",
     "brand": "generic",
     "qty": "1 gallon",
-    "image": "/Users/ericapiano/Desktop/groceryList/images/milkGallon.svg"
+    "image": "/images/milkGallon.svg"
   },
   {
     "category": "pasta",
@@ -21,7 +21,7 @@
     "type": "Penne",
     "brand": "Barilla",
     "qty": 3,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/penne.svg"
+    "image": "/images/penne.svg"
   },
   {
     "category": "dessert",
@@ -29,7 +29,7 @@
     "type": "Green",
     "brand": "Jello",
     "qty": 3,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/jello.svg"
+    "image": "/images/jello.svg"
   },
   {
     "category": "dairy",
@@ -37,7 +37,7 @@
     "type": "Assorted flavors",
     "brand": "Chobani",
     "qty": 12,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/yogurt.svg"
+    "image": "/images/yogurt.svg"
   },
   {
     "category": "pasta",
@@ -45,7 +45,7 @@
     "type": "Linguini",
     "brand": "Barilla",
     "qty": 3,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/penne.svg"
+    "image": "/images/penne.svg"
   },
   {
     "category": "beverage",
@@ -53,7 +53,7 @@
     "type": "regular",
     "brand": "Happy Farms",
     "qty": 2,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/appleJuice.svg"
+    "image": "/images/appleJuice.svg"
   },
   {
     "category": "beverage",
@@ -61,6 +61,6 @@
     "type": "Tangerine",
     "brand": "Grey Goose",
     "qty": 1,
-    "image": "/Users/ericapiano/Desktop/groceryList/images/vodka.svg"
+    "image": "/images/vodka.svg"
   }
 ]
