@@ -14,7 +14,6 @@
 // Using Vanilla JS...........
 
 function loadGroceries() {
-  // create XHR object
   var xhr = new XMLHttpRequest();
 
   // declare request type & source -- GET, file/url pathing, async
