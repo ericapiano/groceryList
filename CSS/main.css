@@ -4,7 +4,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -56,4 +55,5 @@ body u {
   justify-content: center;
   border: 1px solid black;
 }
+
 /*# sourceMappingURL=main.css.map */
