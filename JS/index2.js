@@ -26,6 +26,7 @@ function loadGroceries() {
       // store JSON info in groceries variable
       var groceries = JSON.parse(this.responseText);
 
+      // create output variable to store looped through data
       var output = "";
 
       // loop through each item in each object of the JSON array
