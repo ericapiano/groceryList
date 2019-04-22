@@ -1,77 +1,66 @@
-// ----------------------------------------------------------------------------------------
-// var fetch = new XMLHttpRequest();
+// using AJAX.......
 
-// fetch.open("GET", "groceries.json", true);
-
-// fetch.onload = function() {
-//   if (this.status == 200) {
-//     var elem = JSON.parse(this.responseText);
-//     var output = "";
-//     for (var i = 0, l = elem.groceries.length; i < l; i++) {
-//       output += `
-//               <div>
-//                   <p>Category : ${elem.groceries[i].category}</p>
-//                   <p>Item : ${elem.groceries[i].item}</p>
-//                   <p>Type : ${elem.groceries[i].type}</p>
-//               </div>
-//           `;
-//     }
-//     $("#list").html(output);
-//   }
-// };
-
-// =====================================================================================
-// var xmlhttp = new XMLHttpRequest();
-// xmlhttp.onreadystatechange = function() {
-//   if (this.readyState == 4 && this.status == 200) {
-//     var myObj = JSON.parse(this.responseText);
-//     document.getElementById(".list").innerHTML = myObj.name;
-//   }
-// };
-// xmlhttp.open("GET", "groceries.json", true);
-// xmlhttp.send();
-
-// ============================================================================
-
-// function load() {
-//   var mydata = JSON.parse(groceries);
-//   alert(mydata[0].category);
-//   alert(mydata[0].item);
-//   console.log("success??");
-// }
-
-// ==============================================================================================
-
-// fetch("./groceries.json")
-//   .then(response => {
-//     return response.json();
-//   })
-//   .then(data => {
+// $.ajax({
+//   url: "groceries.json",
+//   dataType: "json",
+//   type: "GET",
+//   function(data) {
 //     console.log(data);
-//   })
-//   .catch(function(error) {
-//     console.log(error);
-//   });
-// =============================================================================
+//   }
+// });
 
-// function loadJSON(callback) {
-//   var xobj = new XMLHttpRequest();
-//   xobj.overrideMimeType("application/json");
-//   xobj.open("GET", "groceries.json", true);
-//   xobj.onreadystatechange = function() {
-//     if (xobj.readyState == 4 && xobj.status == "200") {
+// =======================================
 
-//       callback(xobj.responseText);
-//     }
-//   };
-//   xobj.send(null);
-// }
-// var actual_JSON;
-// function init() {
-//   loadJSON(function(response) {
-//     // Parse JSON string into object
-//     actual_JSON = JSON.parse(response);
-//     console.log(actual_JSON + "success??");
-//   });
-// }
-// $("#list").html(actual_JSON);
+// Using Vanilla JS...........
+
+function loadGroceries() {
+  // create XHR object
+  var xhr = new XMLHttpRequest();
+
+  // declare request type & source -- GET, file/url pathing, async
+  xhr.open("GET", "groceries.json", true);
+
+  xhr.onload = function() {
+    // check for status of HTTP response (200 = ok; 403 = forbidden; 404 = not found)
+    if (this.status === 200) {
+      // store JSON info in groceries variable
+      var groceries = JSON.parse(this.responseText);
+
+      var output = "";
+
+      // loop through each item in each object of the JSON array
+      for (var i in groceries) {
+        // append value for each data point to output variable
+        output +=
+          '<div class="list">' +
+          'img src="' +
+          groceries[i].image +
+          '">' +
+          "<ul>" +
+          "<li>" +
+          groceries[i].category +
+          '"</li>' +
+          "<li>" +
+          groceries[i].item +
+          '"</li>' +
+          "<li>" +
+          groceries[i].type +
+          '"</li>' +
+          "<li>" +
+          groceries[i].brand +
+          '"</li>' +
+          "<li>" +
+          groceries[i].qty +
+          '"</li>' +
+          "</ul>" +
+          "</div>";
+      }
+
+      // print data to HTML in the <div class=list> as made on HTML page
+      document.getElementById("list").innerHTML = output;
+    }
+  };
+
+  // sends request
+  xhr.send();
+}

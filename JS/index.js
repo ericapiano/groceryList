@@ -1,4 +1,3 @@
-// this function runs when the page is loaded
 $(function() {
   // create JSON array and store in the data variable
   var data = [
@@ -90,6 +89,7 @@ function read_array(data) {
   var list = list_items.map(
     val =>
       // create "photo" class dynamically to hold food's image on page and assigns coorelated "alt" tag (to be altered in CSS for sizing and positioning)
+      //
       `<div class="photo"><img class="picture" src=${val.image} alt="${
         val.name
       }"><ul class="list_li"><u>${val.category}</u><br><b>${
